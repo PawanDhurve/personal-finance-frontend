@@ -1,0 +1,319 @@
+/* dashboard.css */
+
+/* General Container */
+.dashboard-container {
+  padding: 1.5rem;
+  background-color: #f3f4f6; /* Light Gray Background */
+  min-height: 100vh;
+}
+
+/* Header */
+.dashboard-header {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 0.5s forwards; /* Fade in and slide up animation */
+}
+
+@keyframes fadeInUp {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d3748; /* Gray color */
+}
+
+/* Overview Section */
+.overview-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .overview-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .overview-section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.overview-card {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.overview-card h2 {
+  font-size: 1.125rem;
+  color: #4a5568; /* Dark Gray */
+}
+
+.overview-card p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Expense Breakdown Section */
+.expense-breakdown {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.expense-breakdown h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.graph-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .graph-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Add Transaction Button */
+.add-transaction-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.add-transaction-btn button {
+  display: flex;
+  align-items: center;
+  background-color: #4db6ac; /* Teal */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-transaction-btn button:hover {
+  background-color: #00897b; /* Darker Teal */
+}
+
+.add-transaction-btn button .icon {
+  margin-right: 0.5rem;
+}
+
+/* Responsive Graph Styling */
+@media (max-width: 640px) {
+  .graph-section .expense-breakdown,
+  .graph-section .expense-trend {
+    margin-top: 1rem;
+  }
+}
+
+.weather-widget {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weather-widget .location {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.weather-widget .temp {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2b6cb0;
+}
+
+.weather-widget .icon {
+  font-size: 2rem;
+  color: #f97316;
+}
+
+.activity-feed {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+}
+
+.activity-feed h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.activity-feed ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.activity-feed li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.activity-feed li:last-child {
+  border-bottom: none;
+}
+
+.activity-feed .event {
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+.activity-feed .timestamp {
+  font-size: 0.875rem;
+  color: #a0aec0;
+}
+
+.goal-tracking {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+}
+
+.goal-tracking .goal-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.goal-tracking .progress-bar {
+  height: 10px;
+  background-color: #e2e8f0;
+  border-radius: 5px;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.goal-tracking .progress {
+  height: 100%;
+  background-color: #38b2ac;
+  border-radius: 5px;
+}
+
+.goal-tracking .progress-text {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  font-size: 1rem;
+  color: #38b2ac;
+}
+
+.progress-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(#38b2ac 50%, #e2e8f0 0deg);
+  font-size: 1.25rem;
+  color: #4a5568;
+  position: relative;
+}
+
+.progress-circle span {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.financial-trends {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+}
+
+.financial-trends h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.monthly-summary {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.monthly-summary .kpi-card {
+  padding: 1rem;
+  background-color: #f7fafc;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.monthly-summary .kpi-card h3 {
+  font-size: 1.25rem;
+  color: #4a5568;
+}
+
+.monthly-summary .kpi-card p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.notifications {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+}
+
+.notifications ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.notifications li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.notifications li:last-child {
+  border-bottom: none;
+}
+
+.notifications .alert {
+  font-size: 1rem;
+  color: #3182ce;
+}
+
+.notifications .timestamp {
+  font-size: 0.875rem;
+  color: #a0aec0;
+}

@@ -1,0 +1,530 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #2980b9, #6dd5fa);
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  position: relative;
+  margin-bottom: 50px; /* Increased spacing */
+}
+
+/* Finance Options Section */
+.finance-options {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f8f9fa; /* Softer background */
+  margin-bottom: 50px; /* More separation */
+}
+
+.finance-options h2 {
+  font-size: 2.2em;
+  margin-bottom: 50px;
+}
+
+.options-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.option {
+  background: #2980b9;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  font-size: 1.2em;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  width: 200px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.option:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Separation */
+.chart-and-ads-section, .sponsorship, .articles, .features, .testimonials, .faq {
+  margin-bottom: 60px;
+}
+
+/* Expense Tracking Chart and Ads */
+.chart-and-ads-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background: #f0f0f0;
+  gap: 40px; /* Added gap between chart and ads container */
+}
+
+.chart-container-wrapper, .ads-container {
+  width: 48%;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.ads-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sponsorship Section */
+.sponsorship {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f8f9fa;
+}
+
+.sponsorship h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.sponsorship-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+
+.sponsorship-item {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 240px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #2980b9;
+}
+
+/* Ad Slide-Up Boxes */
+.ad-slide-up-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.ad-slide-up {
+  background: white;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  padding: 25px;
+  width: 280px;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #2980b9;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.ad-slide-up:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar & Footer Styling */.o 
+.navbar, .footer {
+  background: #2980b9;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Articles Section */
+.articles {
+  text-align: left;
+  padding: 15px 20px 30px 20px;
+  background: #f8f9fa;
+  width: 50%; /* Increased width */
+  height: 400px;
+  margin-left: 20px; /* Reduced margin to balance alignment */
+  overflow-y: auto;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.articles h2 {
+  margin-top: 5px;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  width: 100%; /* Ensure it adapts to the new width */
+}
+
+.article {
+  background: white;
+  color: #2980b9;
+  width: 95%; /* Adjusted width for better balance */
+  max-width: 600px; /* Increased max-width */
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.article:hover {
+  transform: scale(1.05);
+}
+
+
+/* Ensure parent section is centered */
+#features {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* 🔥 Increased section width for better spacing */
+.features {
+  background: white;
+  width: 80%; /* Slightly increased width */
+  max-width: 700px; /* More room for boxes */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Fixed 2x2 Grid Layout with proper alignment */
+.feature-container {
+  display: grid !important; /* Force grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Exactly 2 columns */
+  grid-template-rows: repeat(2, auto); /* Ensures 2 rows */
+  gap: 20px; /* Adjusted gap */
+  justify-content: center;
+  width: 100%;
+  align-items: stretch; /* Ensure equal height */
+}
+
+/* Feature Box Styling */
+/* Feature Box Styling */
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center; /* Ensure text alignment */
+  background: white;
+  min-width: 150px; /* Ensure a minimum width */
+  height: 120px; /* Set a fixed height */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Prevents box size issues */
+}
+
+
+/* Add slight top margin for first-row boxes to push content down slightly */
+.feature:nth-child(1),
+.feature:nth-child(2) {
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .feature-container {
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
+}
+
+
+
+
+/* Parent Container for Alignment */
+.articles-features-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Slight gap between the sections */
+  padding: 0 40px;
+  flex-direction: row-reverse; /* Changed to row-reverse to swap the positions */
+}
+
+/* Ensuring Equal Width & Height for Both Sections */
+.articles, .features {
+  width: 48%; /* Same width for both sections */
+  height: 420px; /* Same height for both sections */
+  padding: 20px;
+  background: #f8f9fa;
+  overflow-y: auto;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.articles h2, .features h2 {
+  margin-top: 5px;
+}
+
+.article-container, .feature-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.article, .feature {
+  background: white;
+  color: #2980b9;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.article:hover, .feature:hover {
+  transform: scale(1.05);
+}
+
+/* Testimonials Section */
+#testimonials {
+  background-color: #f9f9f9;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+#testimonials h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+#testimonials p {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+/* Display Review Box */
+/* Container for both boxes */
+.testimonials-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Style for the Recent Reviews Box */
+.recent-reviews-box {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 48%; /* Adjust width to fit in one row */
+}
+
+.recent-reviews-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.review-card {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: left;
+}
+
+.review-rating {
+  margin-top: 1rem;
+}
+
+.review-rating .fa-star {
+  margin-right: 5px;
+  font-size: 1.5rem;
+}
+
+/* Style for the Add Review Box */
+.add-review-box {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 48%; /* Adjust width to fit in one row */
+}
+
+.add-review-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-form textarea {
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  min-height: 120px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.star {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.star.selected {
+  color: #FFD700;
+}
+
+.star:hover {
+  color: #FFD700;
+}
+
+.btn {
+  width: 20%;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background-color: #53a79c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #428a77;
+}
+
+.faq-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+.faq-section p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: #f8f8f8;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.faq-question:hover {
+  background: #e6e6e6;
+}
+
+.faq-question.active {
+  background: #0056b3;
+  color: #fff;
+}
+
+.arrow {
+  font-size: 16px;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  padding: 0 15px;
+}
+
+.faq-answer.show {
+  max-height: 200px;
+  padding: 10px 15px;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .faq-section {
+    padding: 15px;
+  }
+
+  .faq-question {
+    font-size: 14px;
+  }
+
+  .faq-answer {
+    font-size: 14px;
+  }
+}
+

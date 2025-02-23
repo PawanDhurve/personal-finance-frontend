@@ -1,0 +1,158 @@
+/* Centering the auth container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+/* Styling the auth box with a rectangular shape */
+.auth-box {
+  position: relative;
+  width: 800px;
+  height: 550px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background: white;
+  display: flex;
+}
+
+/* Wrapper for smooth sliding effect */
+.auth-wrapper {
+  display: flex;
+  width: 200%;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Left and Right sections */
+.auth-left, .auth-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.auth-left {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+}
+
+.auth-right {
+  background: white;
+  color: black;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #f0f0f0;
+  outline: none;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2575fc;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #1a5ed6;
+}
+
+/* Ensure all buttons match input width and height */
+.auth-right button, .auth-left button, .greeting-button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Greeting Side Buttons */
+.greeting-button {
+  background: #ffffff;
+  color: #2575fc;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  border: 2px solid #2575fc;
+}
+
+.greeting-button:hover {
+  background: #2575fc;
+  color: white;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icons svg {
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons svg:hover {
+  transform: scale(1.15);
+}
+
+/* Sliding effect with content change happening while moving */
+.auth-box.slide .auth-wrapper {
+  transform: translateX(-50%);
+}
+
+.auth-box.slide .auth-left, 
+.auth-box.slide .auth-right {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards, blurEffect 0.5s ease-in-out;
+}
+
+.auth-box.signup .auth-wrapper {
+  transform: translateX(0%);
+}
+
+.auth-box.signup .auth-left, 
+.auth-box.signup .auth-right {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards, blurEffect 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@keyframes blurEffect {
+  0% { filter: blur(5px); }
+  100% { filter: blur(0px); }
+}

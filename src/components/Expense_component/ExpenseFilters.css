@@ -1,0 +1,126 @@
+.expense-filters {
+    max-width: 700px;  /* Increased width for better spacing */
+    margin: 20px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #ddd; /* Ensures no overlap */
+    box-sizing: border-box;
+}
+
+.expense-filters:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Two Columns Layout */
+.filters-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Two fields per row */
+    gap: 20px; /* Increased gap for better spacing */
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.filters-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* Improved Input & Select Styles */
+input,
+select {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    width: 100%; /* Ensures inputs fit inside container */
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    background: #fff;
+    box-shadow: 0px 0px 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #388E3C;
+    transform: scale(1.05);
+}
+
+/* Filtered Expense Results */
+.expense-results {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    max-height: 300px;
+    overflow-y: auto;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.expense-results p {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.expense-item {
+    background: #fff;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.expense-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Fix: Single Column for Small Screens */
+@media (max-width: 600px) {
+    .filters-container {
+        grid-template-columns: 1fr; /* One column layout on small screens */
+    }
+}
