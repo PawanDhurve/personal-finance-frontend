@@ -1,0 +1,118 @@
+/* Collaboration Tools Container */
+.collaboration-tools {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    animation: fadeIn 0.6s ease-in;
+}
+
+.collaboration-tools:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading & Paragraph */
+.collaboration-tools h2 {
+    color: #2c3e50;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.collaboration-tools p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Input Field */
+.collaboration-tools input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.collaboration-tools input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Button Styling */
+.collaboration-tools button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.collaboration-tools button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Invitation Message */
+.invite-message {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff3b30;
+}
+
+/* Invited List */
+.invited-list {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.invited-list h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.invited-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.invited-list li {
+    background: #f3f3f3;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .collaboration-tools {
+        max-width: 90%;
+    }
+}

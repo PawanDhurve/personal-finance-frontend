@@ -1,0 +1,138 @@
+/* General Styling */
+.expense-summary {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.expense-summary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Summary Details */
+.summary-details {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.summary-details p {
+    font-size: 18px;
+    color: #555;
+    font-weight: 600;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.filters label {
+    font-weight: bold;
+    color: #444;
+}
+
+.filters select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.filters select:hover {
+    border-color: #007bff;
+}
+
+/* Charts Section */
+.charts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.chart-container {
+    width: 45%;
+    min-width: 300px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s ease-in-out;
+}
+
+.chart-container h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* Loading & Error */
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .summary-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .charts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chart-container {
+        width: 90%;
+    }
+}

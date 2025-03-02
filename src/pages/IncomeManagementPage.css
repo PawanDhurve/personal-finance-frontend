@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Page Layout */
+  .income-management-page {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  /* Income Form */
+  .income-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .income-form input,
+  .income-form textarea,
+  .income-form button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .income-form input:focus,
+  .income-form textarea:focus,
+  .income-form button:focus {
+    border-color: green;
+  }
+  
+  .income-form button {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .income-form button:hover {
+    background-color: darkgreen;
+  }
+  
+  /* Income List */
+  .income-list {
+    margin-top: 30px;
+    overflow-x: auto;
+  }
+  
+  .income-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .income-list th, .income-list td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .income-list th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  /* Monthly Income Chart */
+  .income-graph {
+    margin-top: 40px;
+  }
+  
+  .income-graph canvas {
+    width: 100%;
+    height: 400px;
+  }
+  
